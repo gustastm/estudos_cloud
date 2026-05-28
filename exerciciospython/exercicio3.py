@@ -8,7 +8,7 @@ print("Iniciando tentativa de conexão...")
 try:
     print(f"Conectando ao servidor: {servidores[5]}")
 
-except:
+except IndexError:
     print("Aviso: Não foi possível concectar ao servidor!")    
 
 # O objetivo é fazer o código sobreviver até chegar aqui:

@@ -1,0 +1,5 @@
+[14:00:01] INFO: Servidor web iniciado com sucesso.
+[14:05:22] ERROR: Falha de conexão com o banco de dados principal.
+[14:10:00] INFO: Backup diário finalizado.
+[14:12:45] ERROR: Memória RAM atingiu 99% de uso.
+[14:15:00] WARNING: CPU operando em 85%.
