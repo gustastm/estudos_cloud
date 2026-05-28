@@ -1,18 +1,26 @@
-# 1. Nossas variáveis (Simulando os dados que viriam de um servidor)
-nome_do_servidor = "Banco-de-Dados-Principal"
-memoria_usada = 40  # Isso representa 40% de uso
-status_ativo = True
+# 1. Uma lista de servidores (guardando dicionários com os dados de cada um)
+servidores = [
+    {"nome": "Web-Production-01", "memoria": 45, "ativo": True},
+    {"nome": "Web-Production-02", "memoria": 89, "ativo": True},
+    {"nome": "Database-Principal", "memoria": 92, "ativo": True},
+    {"nome": "Auth-Service", "memoria": 30, "ativo": False},
+]
 
-print(f"Iniciando diagnóstico do servidor: {nome_do_servidor}")
-print("--------------------------------------------------")
+print("=== INICIANDO VARREDURA DO DATA CENTER ===")
 
-# 2. A nossa Lógica de Decisão (Onde o DevOps brilha)
-if memoria_usada > 80:
-    print(f"🚨 ALERTA CRÍTICO: Uso de memória em {memoria_usada}%!")
-    print("Ação Automática: Subindo um servidor extra para ajudar na carga...")
-else:
-    print(f"✅ STATUS OK: Uso de memória em {memoria_usada}%.")
-    print("Ação: Nenhuma intervenção necessária no momento.")
+# 2. O Loop 'For' (O robô vai passar de servidor em servidor automaticamente)
+for servidor in servidores:
+    print(f"\nVerificando: {servidor['nome']}")
+    
+    # Se o servidor estiver desligado (False)
+    if not servidor["ativo"]:
+        print("❌ CRÍTICO: O servidor está FORA DO AR!")
+        continue  # Pula para o próximo servidor da lista
+        
+    # Se estiver ativo, verifica a memória
+    if servidor["memoria"] > 80:
+        print(f"🚨 ALERTA: Uso de memória elevado em {servidor['memoria']}%!")
+    else:
+        print(f"✅ ESTÁVEL: Uso de memória em {servidor['memoria']}%")
 
-print("--------------------------------------------------")
-print("Diagnóstico finalizado.")
+print("\n=== VARREDURA FINALIZADA ===")
