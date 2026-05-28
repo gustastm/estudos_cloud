@@ -12,7 +12,7 @@ print("=== INICIANDO VARREDURA DO DATA CENTER ===")
 for servidor in servidores:
     print(f"\nVerificando: {servidor['nome']}")
     
-    # Se o servidor estiver desligado (False)
+    # Se o servidor estiver desligado (False)pi
     if not servidor["ativo"]:
         print("❌ CRÍTICO: O servidor está FORA DO AR!")
         continue  # Pula para o próximo servidor da lista

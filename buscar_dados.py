@@ -16,7 +16,7 @@ if resposta.status_code == 200:
     dados = resposta.json()
     
     # Vamos ver quantos astronautas estão lá em cima
-    numero_astronautas = dados["number"]
+    numero_astronautas = dados["quantidade"]
     print(f"\nNeste momento, existem {numero_astronautas} pessoas no espaço!")
     print("--------------------------------------------------")
     
