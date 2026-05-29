@@ -1,0 +1,5 @@
+nginx: ATIVO
+docker: ATIVO
+ftp: INATIVO
+ssh: ATIVO
+telnet: INATIVO
