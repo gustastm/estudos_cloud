@@ -1,3 +1,2 @@
-ftp: INATIVO
-telnet: INATIVOftp: INATIVO
-telnet: INATIVO
+suporte_velho
+estagiario_antigo

@@ -1,0 +1,10 @@
+visitante
+admin
+desenvolvedor
+suporte
+root
+auditor
+admin gustavo
+admin vitor
+admin jose
+admin pedro

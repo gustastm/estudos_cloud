@@ -1,0 +1,6 @@
+45
+80
+corrompido
+12
+timeout
+50
